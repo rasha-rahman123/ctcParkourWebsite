@@ -1,14 +1,14 @@
 import React from "react";
 import '../App.css';
 import pk1 from '../pk1.png';
-import logo from '../CTC.png';
+
 import dude from '../scientist.png';
 import {Container, Row, Col, Alert} from 'react-bootstrap';
 
 function Home() {
   return (
     <div className="App">
-           <img src={logo} alt="Logo" width="283" height="100"></img>
+          
     <div className="Notice">"CREATED BY RASHA RAHMAN & NICK RAMIREZ"</div>
     <div className="list2"><Container>
       <Row>

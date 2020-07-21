@@ -1,0 +1,81 @@
+.chatbox {
+ margin: auto;
+ text-align: center;
+ background-color: #00000090;
+ /* background: linear-gradient(45deg, #a1503780 , #74331580, #11587280, #112c5e80 );
+ background-size: 400% 400%;
+ -webkit-animation: gradientBG 10s ease infinite;
+         animation: gradientBG 10s ease infinite; */
+}
+
+.form-group{
+    width: 50%; 
+    text-align: center;
+    height: 2vw;
+    margin: auto;
+    margin-bottom: 3vw;
+       
+}
+
+.form-control {
+    all: initial;
+  
+    all: unset;
+  
+
+   
+}
+button {
+    all: initial;
+  
+    all: unset;
+    font-size: smaller;
+}
+
+.form-control:hover {
+    all: initial;
+  
+      all: unset;  
+}
+
+.form-control:focus {
+    all: initial;
+  
+      all: unset;  
+}
+.chatout {
+    color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #d6612a, #23a6d5, #2361d5 );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+            animation: gradientBG 10s ease infinite;
+    border-radius: 10px;
+    width: 60.75vh;
+    display: flex;
+    height: 70.75vh;
+    
+  
+}
+
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

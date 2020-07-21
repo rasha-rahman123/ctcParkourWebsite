@@ -1,17 +1,27 @@
 .App {
   text-align: center;
 }
+
+.btn-primary {
+  all: initial;
+  
+  all: unset;
+}
+
 body {
-  background: linear-gradient(7deg, #116aff, #ff9e17);
+  background: linear-gradient(-20deg, #116aff, #ff9e17);
   background-size: 400% 400%;
 
-  -webkit-animation: bg-gradient 37s ease infinite;
-  -moz-animation: bg-gradient 37s ease infinite;
-  animation: bg-gradient 37s ease infinite;
+  -webkit-animation: bg-gradient 10s ease infinite;
+  -moz-animation: bg-gradient 10s ease infinite;
+  animation: bg-gradient 10s ease infinite;
+  
 }
 .col-sm-2 {
   width: auto;
 }
+
+
 @-webkit-keyframes bg-gradient {
   0%{background-position:27% 0%}
   50%{background-position:74% 100%}

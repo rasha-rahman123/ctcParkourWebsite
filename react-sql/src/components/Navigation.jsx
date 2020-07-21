@@ -1,9 +1,11 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import '../App.css';
+import logo from '../CTC.png';
 function Navigation(props) {
   return (
     <div className="navigation">
+            <img src={logo} alt="Logo" width="283" height="100"></img>
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
           
@@ -52,6 +54,7 @@ function Navigation(props) {
    
         </div>
       </nav>
+
     </div>
   );
 }
