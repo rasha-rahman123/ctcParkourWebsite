@@ -10,6 +10,8 @@ const io = require("socket.io")(server)
 
 const SELECT_ALL_STATS_QUERY = 'SELECT * FROM pk_times_comp ORDER BY TOPSCORE DESC';
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 const connection = mysql.createConnection({
     host: 'sql3.freemysqlhosting.net',
     user: 'sql3355864',
@@ -24,6 +26,9 @@ connection.connect(err => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 
 io.on("connection", socket => {
