@@ -3,6 +3,7 @@ import logo from '../CTC.png';
 import '../App.css';
 import { render } from '@testing-library/react';
 import {Image, Form, InputGroup, Row, Container, Col, OverlayTrigger, Tooltip} from 'react-bootstrap';
+
 class Scoreboard extends Component{
   constructor(){
       super();
@@ -106,7 +107,11 @@ renderUser = ({UUID, NAME, TOPSCORE,RED, LIME, BLUE, BLACK, WHITE, GLASS, YELLOW
         <h6> {filteredContacts.slice(0,3).map(this.renderUser)}</h6></div>
 
 
+       
+
+
       </div>
+  
       </Container>
   );
   }

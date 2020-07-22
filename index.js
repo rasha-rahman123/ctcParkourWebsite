@@ -29,8 +29,8 @@ connection.connect(err => {
 io.on("connection", socket => {
     const { id } = socket.client;
     console.log(`User Connected: ${id}`);
-    socket.on("chat message", ({ nickname, msg }) => {
-      io.emit("chat message", { nickname, msg });
+    socket.on("chat message", ({ ColorHolder, nickname, msg }) => {
+      io.emit("chat message", { id , ColorHolder, nickname, msg });
     });
   });
 app.use(cors());
