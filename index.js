@@ -13,7 +13,7 @@ const bodyParser = require('body-parser');
 
 const SELECT_ALL_STATS_QUERY = 'SELECT * FROM pk_times_comp ORDER BY TOPSCORE DESC';
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'react-sql/build')));
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
@@ -34,7 +34,7 @@ connection.connect(err => {
     }
 });
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
