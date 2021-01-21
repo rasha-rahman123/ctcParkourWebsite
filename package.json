@@ -8,7 +8,7 @@
     "firebase-tools": "^8.6.0",
     "mysql": "^2.18.1",
     "path": "^0.12.7",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
